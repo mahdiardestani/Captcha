@@ -17,9 +17,11 @@ sleep(5)
 refresh_id = "frmconinput_ReloadLink"
 refresh = driver.find_element_by_id(refresh_id)
 i = 0
+N = 256
 
-pbar = tqdm(total=256)
-while i < 256:
+
+pbar = tqdm(total=N)
+while i < N:
     try:
         filename = f'captcha_{167}_{i}.jpg'
         filename2 = f'captcha_{167}_{i}.jpg'
